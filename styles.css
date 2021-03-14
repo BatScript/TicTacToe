@@ -1,0 +1,57 @@
+body{
+    background-color: #312c51;
+}
+
+h1, h2{
+    text-align: center;
+    font-family: 'Ranchers', cursive;
+    color: white;
+}
+
+.game{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+#col{
+    display: flex;
+}
+
+.row{
+    border-style:solid;
+    border-width: 3px;
+    width: 100px;
+    height: 100px;
+    background-color: #caf7e3;
+    text-align: center;
+    font-size: 5.9rem;
+}
+
+.buttons{
+    display: flex;
+    width: fit-content;
+    margin: 50px auto;   
+}
+
+button{
+    display: flex;
+    width: fit-content;
+    margin: auto 15px;
+    padding: 15px;
+    background-color: #e4bad4;
+    border-radius: 10px;
+    border-style: none;
+    font-size: large;
+    font-weight: 700;
+}
+
+footer{
+    text-align: center;
+    color: white;
+}
+
+footer>p>a{
+    text-decoration: none;
+    color: aqua;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">    
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic tac toe</title>
+</head>
+
+<body>
+    <h1>TIC TAC TOE</h1>
+    <h2>How to play: Click on the square and click on the desired symbol to place in it </h2>
+    <div class="game">
+        <div id="col">
+            <div class="row" id="row1" onclick="clickfun(this.id)"></div>
+            <div class="row" id="row2" onclick="clickfun(this.id)"></div>
+            <div class="row" id="row3" onclick="clickfun(this.id)"></div>
+        </div>
+        <div id="col">
+            <div class="row" id="row4" onclick="clickfun(this.id)"></div>
+            <div class="row" id="row5" onclick="clickfun(this.id)"></div>
+            <div class="row" id="row6" onclick="clickfun(this.id)"></div>
+        </div>
+        <div id="col">
+            <div class="row" id="row7" onclick="clickfun(this.id)"></div>
+            <div class="row" id="row8" onclick="clickfun(this.id)"></div>
+            <div class="row" id="row9" onclick="clickfun(this.id)"></div>
+        </div>
+    </div>
+<div class="buttons">
+    <button onclick="callX()">X</button>
+    <button onclick="callO()">O</button>
+    <button onclick="clearCell()">Clear Cell</button>
+    <button class="startagain" onclick="location.reload()">Start Again</button>
+</div>
+</body>
+<footer>
+    <p>©Mohit 2021</p>
+    <p>Visit my <a href="https://github.com/CodeBinge21">Github</a> for more such fun projects</p>
+</footer>
+</html>
