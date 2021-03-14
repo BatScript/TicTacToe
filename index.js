@@ -66,7 +66,7 @@ function resultAnalysis() {
     var value = [3];
     var result;
     let i;
-//||  || || || || || || ) 
+ 
     if(r1 == r2 && r2 == r3 && r1 != ""){
         value = [1,2,3]
         result = true;
