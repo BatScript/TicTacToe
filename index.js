@@ -27,9 +27,11 @@ function callX() {
 //Putting O
 
 function callO() {
+    let mySound = new Audio("click2.wav")
     let i;
     for (i = 1; i <= 9; i++) {
         if (document.getElementById("row" + i).style.borderColor == "blue") {
+            mySound.play();
             document.getElementById("row" + i).innerHTML = "O";
         }
     }
