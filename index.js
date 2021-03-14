@@ -100,10 +100,12 @@ function resultAnalysis() {
         }
     function winEffect(){
         let i;
+        let winner = document.getElementById("row"+value[1]).innerHTML;
         for(i=0;i<3;i++){
             document.getElementById("row" + value[i]).style.backgroundColor = "#f39189";
         }
         document.body.style.backgroundColor="#007965"
         mySound.play();
+        document.getElementById("winner").innerHTML = winner + " Won the Game";
     }
 }

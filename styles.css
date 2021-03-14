@@ -1,11 +1,13 @@
 body{
     background-color: #312c51;
+    transition: 1s;
 }
 
 h1, h2{
     text-align: center;
     font-family: 'Ranchers', cursive;
     color: white;
+    font-size: 1.8rem;
 }
 
 .game{
@@ -27,6 +29,11 @@ h1, h2{
     text-align: center;
     font-size: 5.9rem;
     border-radius: 10px;
+    transition: 1s;
+}
+
+#winner{
+    transition: 2s;
 }
 
 .buttons{
