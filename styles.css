@@ -26,6 +26,7 @@ h1, h2{
     background-color: #caf7e3;
     text-align: center;
     font-size: 5.9rem;
+    border-radius: 10px;
 }
 
 .buttons{

@@ -63,12 +63,35 @@ function resultAnalysis() {
     var r9 = document.getElementById("row9").innerHTML;
     var mySound = new Audio("win.wav");
     var check = 0;
+    var value = [3];
     var result;
     let i;
-
-    if ((r1 == r2 && r2 == r3 && r1 != "")|| ((r4 == r5) && (r5 == r6) && (r4 != "")) || ((r7 == r8) && (r8 == r9)) &&(r7 != "")|| ((r1 == r4) && (r4 == r7))&& (r1 != "")|| ((r2 == r5) && (r5 == r8)) &&(r2 != "")|| ((r3 == r6) && (r6 == r9))&& (r3 != "")|| ((r1 == r5) && (r5 == r9))&& (r1 != "")|| ((r3 == r5) && (r5 == r7) &&(r3 != ""))) {
+//||  || || || || || || ) 
+    if(r1 == r2 && r2 == r3 && r1 != ""){
+        value = [1,2,3]
         result = true;
-    } else {
+    } else if((r4 == r5) && (r5 == r6) && (r4 != "")) {
+        value = [4,5,6];
+        result = true;
+    } else if((r7 == r8) && (r8 == r9) &&(r7 != "")){
+        value = [7,8,9];
+        result = true;
+    } else if((r1 == r4) && (r4 == r7)&& (r1 != "")){
+        value = [1,4,7];
+        result = true;
+    } else if((r2 == r5) && (r5 == r8) &&(r2 != "")){
+        value = [2,5,8];
+        result = true;
+    }else if((r3 == r6) && (r6 == r9)&& (r3 != "")){
+        value = [3,6,9];
+        result = true;
+    }else if((r1 == r5) && (r5 == r9)&& (r1 != "")){
+        value = [1,5,9];
+        result = true;
+    }else if((r3 == r5) && (r5 == r7) &&(r3 != "")){
+        value = [3,5,7];
+        result = true;
+    }else{
         result = false;
     }
     //console.log(result);
@@ -76,7 +99,11 @@ function resultAnalysis() {
             winEffect();
         }
     function winEffect(){
-        document.body.style.backgroundColor="green"
+        let i;
+        for(i=0;i<3;i++){
+            document.getElementById("row" + value[i]).style.backgroundColor = "#f39189";
+        }
+        document.body.style.backgroundColor="#007965"
         mySound.play();
     }
 }
