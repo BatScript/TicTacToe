@@ -1,6 +1,6 @@
 //Selecting the Cell
 
-function clickfun(clicked_id) {
+function clickfun(clicked_id) {    
     let i;
     var check;
     var bla = document.getElementById(clicked_id);
@@ -13,9 +13,11 @@ function clickfun(clicked_id) {
 //Putting X
 
 function callX() {
+    let mySound = new Audio("click.wav");
     let i;
     for (i = 1; i <= 9; i++) {
         if (document.getElementById("row" + i).style.borderColor == "blue") {
+            mySound.play();
             document.getElementById("row" + i).innerHTML = "X";
         }
     }
